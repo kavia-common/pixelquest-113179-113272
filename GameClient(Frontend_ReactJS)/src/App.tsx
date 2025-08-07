@@ -6,7 +6,7 @@ import { PauseMenu } from "./overlays/PauseMenu";
 import { SettingsMenu } from "./overlays/SettingsMenu";
 import { useGameStore } from "./state/gameStore";
 import { AudioProvider } from "./sound/AudioProvider";
-import "./styles/App.css";
+
 
 const OVERLAYS = {
   NONE: 0,
