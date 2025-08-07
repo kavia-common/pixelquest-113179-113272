@@ -34,9 +34,9 @@ function App() {
       <div className="app-root">
         <GameCanvas />
         {overlay === OVERLAYS.NONE && running && <HUD />}
-        {overlay === OVERLAYS.MAIN_MENU && <MainMenu onStart={startGame} onSettings={() => setOverlay(OVERLAYS.SETTINGS)} />}
-        {overlay === OVERLAYS.PAUSE && <PauseMenu onResume={resumeGame} onExit={() => setOverlay(OVERLAYS.MAIN_MENU)} />}
-        {overlay === OVERLAYS.SETTINGS && <SettingsMenu onBack={() => setOverlay(OVERLAYS.MAIN_MENU)} />}
+        {overlay === OVERLAYS.MAIN_MENU && <MainMenu onStart={startGame} onSettings={() => setOverlay(OVERLAYS.SETTINGS as 0 | 1 | 2 | 3)} />}
+        {overlay === OVERLAYS.PAUSE && <PauseMenu onResume={resumeGame} onExit={() => setOverlay(OVERLAYS.MAIN_MENU as 0 | 1 | 2 | 3)} />}
+        {overlay === OVERLAYS.SETTINGS && <SettingsMenu onBack={() => setOverlay(OVERLAYS.MAIN_MENU as 0 | 1 | 2 | 3)} />}
       </div>
     </AudioProvider>
   );
