@@ -1,0 +1,53 @@
+.overlay-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 280px;
+  min-height: 220px;
+  background: #202053ee;
+  border: 3px solid #ededab;
+  border-radius: 7px;
+  box-shadow: 0 8px 20px #2227;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', 'VT323', monospace, system-ui;
+  color: #f7f6da;
+  padding: 20px;
+}
+
+.overlay-menu h1.pixel-title {
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #f7d744;
+  text-shadow: 2px 2px 0px #232;
+}
+
+.overlay-menu button {
+  margin: 6px 0;
+  padding: 8px 30px;
+  background: #3a327b;
+  color: #f6f3e2;
+  border: 1.5px solid #bbae5a;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px #161629;
+  transition: background 0.2s;
+}
+.overlay-menu button:focus, .overlay-menu button:hover {
+  background: #6c60cf;
+  color: #fffab0;
+}
+.overlay-menu footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  opacity: 0.8;
+  color: #f2e7b6;
+  text-align: center;
+}
